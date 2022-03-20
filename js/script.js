@@ -40,6 +40,71 @@ function pageTt(){
       
         });
     }
+
+    //load content 
+    
+    $('.control-1').click(function(){
+        $('#home').addClass('active')
+        $('#home').removeClass('deactive')
+        $('#about').addClass('deactive')
+        $('#about').removeClass('active')
+        $('#portfolio').addClass('deactive')
+        $('#portfolio').removeClass('active')
+        $('#blogs').addClass('deactive')
+        $('#blogs').removeClass('active')
+        $('#contact').addClass('deactive')
+        $('#contact').removeClass('active')
+    })
+
+    $('.control-2').click(function(){
+        $('#home').addClass('deactive')
+        $('#home').removeClass('active')
+        $('#about').addClass('active')
+        $('#about').removeClass('deactive')
+        $('#portfolio').addClass('deactive')
+        $('#portfolio').removeClass('active')
+        $('#blogs').addClass('deactive')
+        $('#blogs').removeClass('active')
+        $('#contact').addClass('deactive')
+        $('#contact').removeClass('active')
+    })
+    $('.control-3').click(function(){
+        $('#home').addClass('active')
+        $('#home').removeClass('deactive')
+        $('#about').addClass('deactive')
+        $('#about').removeClass('active')
+        $('#portfolio').addClass('active')
+        $('#portfolio').removeClass('deactive')
+        $('#blogs').addClass('deactive')
+        $('#blogs').removeClass('active')
+        $('#contact').addClass('deactive')
+        $('#contact').removeClass('active')
+    })
+    $('.control-4').click(function(){
+        $('#home').addClass('active')
+        $('#home').removeClass('deactive')
+        $('#about').addClass('deactive')
+        $('#about').removeClass('active')
+        $('#portfolio').addClass('deactive')
+        $('#portfolio').removeClass('active')
+        $('#blogs').addClass('active')
+        $('#blogs').removeClass('deactive')
+        $('#contact').addClass('deactive')
+        $('#contact').removeClass('active')
+    })
+    $('.control-5').click(function(){
+        $('#home').addClass('active')
+        $('#home').removeClass('deactive')
+        $('#about').addClass('deactive')
+        $('#about').removeClass('active')
+        $('#portfolio').addClass('deactive')
+        $('#portfolio').removeClass('active')
+        $('#blogs').addClass('deactive')
+        $('#blogs').removeClass('active')
+        $('#contact').addClass('active')
+        $('#contact').removeClass('deactive')
+    })
+
 }
 
 
