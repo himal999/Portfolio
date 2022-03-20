@@ -219,8 +219,10 @@ section {
 }
 
 .header-content .left-header .image img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: all .4s ease-in-out;
@@ -259,6 +261,76 @@ section {
 .header-content .right-header p {
   margin: 1.5rem 0;
   line-height: 2rem;
+}
+
+.header-content .auto-typing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-content .auto-typing .auto-typing-text {
+  margin-left: .9rem;
+  line-height: 90px;
+  overflow: hidden;
+  height: 90px;
+}
+
+.header-content .auto-typing .auto-typing-text li {
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  -webkit-animation: slide 12s steps(4) infinite;
+          animation: slide 12s steps(4) infinite;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.header-content .auto-typing .auto-typing-text li span {
+  position: relative;
+  margin: 1rem 0;
+  line-height: .5rem;
+}
+
+.header-content .auto-typing .auto-typing-text li span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: var(--color-primary);
+  width: 100%;
+  height: 100%;
+  border-left: 0.3rem solid var(--color-secondary);
+  -webkit-animation: typing 3s steps(10) infinite;
+          animation: typing 3s steps(10) infinite;
+}
+
+@-webkit-keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .btn-con {
