@@ -269,6 +269,11 @@ section {
   display: flex;
 }
 
+.header-content .auto-typing h4 {
+  position: relative;
+  top: .5rem;
+}
+
 .header-content .auto-typing .auto-typing-text {
   margin-left: .9rem;
   line-height: 90px;

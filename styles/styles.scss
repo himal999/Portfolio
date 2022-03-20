@@ -203,6 +203,12 @@ section{
     .auto-typing{
         display: flex;
 
+        h4{
+         
+           position: relative;
+           top: .5rem;
+        }
+
         .auto-typing-text{
            margin-left: .9rem;
            line-height:90px;
