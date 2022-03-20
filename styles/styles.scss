@@ -58,33 +58,42 @@ section{
 }
 
 .sec1{
-    display: none;
+   
     transform:translateY(0) scale(1) ;
-    background-color: yellow;
+  
 } 
 .sec2{
-    display: none;
+   
     transform:translateY(0) scale(1) ;
-    background-color: red;
+  
 }  
 .sec3{
-    display: none;
+  
     transform:translateY(0) scale(1) ;
-    background-color: purple;
+    
 }  
 .sec4{
-    display: none;
+  
     transform:translateY(0) scale(1) ;
-    background-color: royalblue;
+ 
 }  
 .sec5{
-    display: none;
+  
     transform:translateY(0) scale(1) ;
-    background-color: saddlebrown;
+
 }   
 
 .active{
     display: block;
+    animation: scalAnim 1s ease-in-out;
+    @keyframes scalAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+    }
 }
 .deactive{
     display: none;
@@ -129,4 +138,10 @@ section{
             pointer-events: none;
         }
     }
+}
+
+/*Header content*/
+
+.header-content{
+    
 }

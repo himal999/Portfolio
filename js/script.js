@@ -42,7 +42,13 @@ function pageTt(){
     }
 
     //load content 
-    
+
+    $('#home').addClass('active')
+    $('#about').addClass('deactive')
+    $('#portfolio').addClass('deactive')
+    $('#blogs').addClass('deactive')
+    $('#contact').addClass('deactive')
+
     $('.control-1').click(function(){
         $('#home').addClass('active')
         $('#home').removeClass('deactive')
@@ -69,8 +75,8 @@ function pageTt(){
         $('#contact').removeClass('active')
     })
     $('.control-3').click(function(){
-        $('#home').addClass('active')
-        $('#home').removeClass('deactive')
+        $('#home').addClass('deactive')
+        $('#home').removeClass('active')
         $('#about').addClass('deactive')
         $('#about').removeClass('active')
         $('#portfolio').addClass('active')
@@ -81,8 +87,8 @@ function pageTt(){
         $('#contact').removeClass('active')
     })
     $('.control-4').click(function(){
-        $('#home').addClass('active')
-        $('#home').removeClass('deactive')
+        $('#home').addClass('deactive')
+        $('#home').removeClass('active')
         $('#about').addClass('deactive')
         $('#about').removeClass('active')
         $('#portfolio').addClass('deactive')
@@ -93,8 +99,8 @@ function pageTt(){
         $('#contact').removeClass('active')
     })
     $('.control-5').click(function(){
-        $('#home').addClass('active')
-        $('#home').removeClass('deactive')
+        $('#home').addClass('deactive')
+        $('#home').removeClass('active')
         $('#about').addClass('deactive')
         $('#about').removeClass('active')
         $('#portfolio').addClass('deactive')

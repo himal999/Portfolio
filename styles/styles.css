@@ -62,42 +62,56 @@ section {
 }
 
 .sec1 {
-  display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: yellow;
 }
 
 .sec2 {
-  display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: red;
 }
 
 .sec3 {
-  display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: purple;
 }
 
 .sec4 {
-  display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: royalblue;
 }
 
 .sec5 {
-  display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
-  background-color: saddlebrown;
 }
 
 .active {
   display: block;
+  -webkit-animation: scalAnim 1s ease-in-out;
+          animation: scalAnim 1s ease-in-out;
+}
+
+@-webkit-keyframes scalAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes scalAnim {
+  0% {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
 }
 
 .deactive {
@@ -162,4 +176,6 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
+
+/*Header content*/
 /*# sourceMappingURL=styles.css.map */
