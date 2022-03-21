@@ -383,4 +383,32 @@ section{
          } 
         }
     }
+    .left-about{
+        padding-right: 5rem;
+        p{
+            line-height: 2rem;
+            padding: 1rem;
+            color: var(--color-grey-1);
+        }
+        h4{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.about-stats{
+    padding-bottom: 4rem;
+    .progress-bars{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+        .progress-bar{
+            display: flex;
+            flex-direction: column;
+            .prog-title{
+                text-transform: uppercase;
+            }
+        }
+    }
 }
