@@ -111,6 +111,14 @@ function pageTt(){
         $('#contact').removeClass('deactive')
     })
 
+    //toggle theme
+
+ 
+
+    $('.theme-btn').click(function(){
+        $('body').toggleClass('light-mode')
+    })
+
 }
 
 
